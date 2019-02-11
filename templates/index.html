@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Twitter Analyzer</title>
+     <link rel="stylesheet" type="text/css" href="../static/mystyle.css">
+  </head>
+ <body>
+    <h1>My Twitter clone</h1>
+ <div>
+
+{% for message in c %}
+    <div class = "csstweets">{{ message }}</div><br>
+    {% endfor %}
+  </div>
+
+<form method = "POST" action ="/">
+  <input name = "text2">
+  <input type = "submit">
+  </form>
+  {% for tweet in tweets %}
+  <div> {{ tweet }} </div>
+  {% endfor %}
+ 
+    
+  </body>
+</html>
